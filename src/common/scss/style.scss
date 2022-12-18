@@ -1,0 +1,65 @@
+@import "./constants.scss";
+@import "./breakpoints.scss";
+@import "./mixins/customScrollbar";
+
+@include custom-scrollbar;
+
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('@/assets/fonts/CormorantGaramond.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "CormorantGaramond", sans-serif;
+  // Запрет выделения текста
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   not supported by any browser */
+
+  // Запрет стрелок в поле input для типа number
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield !important;
+  }
+}
+
+h1, h2, h3 {
+  color: $headers-color;
+}
+
+p {
+  color: white;
+}
+
+a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body {
+  background-image: url("@/assets/background/mainBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
