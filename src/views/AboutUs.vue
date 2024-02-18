@@ -6,7 +6,6 @@
       успев побывать на лайнерах всех круизных компаний, представленных на сайте.
       Наши круизные эксперты лично инспектировали большинство судов, представленных на российском рынке,
       и прекрасно знают, что продают!</p>
-
     <p>Круизная компания Посейдон официальный представитель в России и СНГ крупнейших круизных компаний,
       среди которых такие гиганты, как Royal Caribbean, Holland America Line, Celebrity Cruises,
       Oceania Cruises и MSC Cruises и другие. Благодаря прямым контрактам и продолжительному сотрудничеству,
@@ -35,13 +34,14 @@ export default defineComponent({
   }})
 </script>
 <style>
-h1 {
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: justify;
-  margin-bottom: 20px;
-  text-indent: 25px
+.about {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  p {
+    font-size: 24px;
+  }
 }
 </style>
